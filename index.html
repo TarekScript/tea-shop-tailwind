@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/banner.png" type="image/x-icon">
+
     <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -25,6 +28,9 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        manrope: ["Manrope", "sans-serif"]
                     }
                 }
             }
@@ -32,7 +38,7 @@
     </script>
 </head>
 
-<body>
+<body class="font-manrope">
     <main class="max-w-scren-xl mx-auto px-10 lg:px-28">
         <!-- header section  -->
         <header class="lg:flex pt-10 mb-20">
@@ -140,6 +146,114 @@
                 <h1 class="text-2xl font-bold my-2">Premium Quality</h1>
                 <p class="text-gray-400">Premium Quality that makes tea more elegant and more durable when you use it.
                 </p>
+            </div>
+        </section>
+
+        <!-- review section -->
+        <section
+            class="grid grid-cols-1 md:grid-cols-2 gap-12 py-4 px-2 md:px-5 lg:px-20  md:py-12 bg-gradient-to-r from-[#FF0000] to-[#FF8938] rounded-lg items-center justify-center">
+
+            <!-- text container  -->
+            <div class="flex items-center">
+                <div>
+                    <h1 class="text-7xl font-extrabold text-white">Meet Our Super Clients</h1>
+                    <p class="text-white font-semibold my-5 ">There are many variations of passages of Lorem Ipsum
+                        available, but
+                        the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable. </p>
+                    <button class="bg-white font-bold px-5 py-3 rounded-lg text-[#FF0000]">Show All</button>
+                </div>
+            </div>
+
+            <!-- card container  -->
+            <div class="relative p-4 w-full md:w-3/4">
+                <!-- middle card  -->
+                <div class="bg-white z-10 top-24  px-5 py-2 md:py-7 rounded-lg w-3/4 absolute">
+                    <!-- image  -->
+                    <div class="rounded-full -top-8 -left-10 p-2 absolute">
+                        <img src="images/client.png" alt="">
+                    </div>
+                    <!-- text info -->
+                    <div>
+                        <p class="text-gray-500">We are providing the best and suitable home insurance services for the
+                            people who are interested to treatment</p>
+                        <h3 class="font-bols text-lg mt-5">Ilham Yuda</h3>
+                        <h4 class="text-gray-400 font-medium">Businessman</h4>
+                    </div>
+
+                </div>
+                <!-- top card  -->
+                <div class="opacity-40 bg-white left-2 md:left-28 px-5 py-7 rounded-lg w-full md:w-3/4 relative">
+                    <!-- image  -->
+                    <div class="rounded-full -top-8 -left-10 p-2 absolute">
+                        <img src="images/client.png" alt="">
+                    </div>
+                    <!-- text info -->
+                    <div>
+                        <p class="text-gray-500">We are providing the best and suitable home insurance services for the
+                            people who are interested to treatment</p>
+                        <h3 class="font-bols text-lg mt-5">Ilham Yuda</h3>
+                        <h4 class="text-gray-400 font-medium">Businessman</h4>
+                    </div>
+
+                </div>
+                <!-- bottom card  -->
+                <div
+                    class="opacity-40 bg-white  top-10 left-2 md:left-28 px-5 py-7 rounded-lg w-full md:w-3/4 relative">
+                    <!-- image  -->
+                    <div class="rounded-full -top-8 -left-10 p-2 absolute">
+                        <img src="images/client.png" alt="">
+                    </div>
+                    <!-- text info -->
+                    <div>
+                        <p class="text-gray-500">We are providing the best and suitable home insurance services for the
+                            people who are interested to treatment</p>
+                        <h3 class="font-bols text-lg mt-5">Ilham Yuda</h3>
+                        <h4 class="text-gray-400 font-medium">Businessman</h4>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- News & Events section  -->
+        <section class="my-10 md:my-20 lg:my-32">
+            <h1 class="text-xl md:text-5xl font-bold text-center mb-4">News & Events</h1>
+            <p class="text-center text-gray-500 mb-5 md:mb-12">There are many variations of passages of Lorem Ipsum
+                available, but the
+                majority have suffered alteration
+                in some form, <br> by injected humour, or randomised words which don't look even slightly believable.
+            </p>
+            <!-- event cards  -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-between">
+                <!-- card one  -->
+                <div class="p-5 border rounded-lg border-neutral-400">
+                    <img class="w-full" src="images/news-1.png" alt="">
+                    <p class=" text-gray-400 mt-3">Feb 05, 2027</p>
+                    <h1 class="font-bold text-lg">Collecting 8 points for discount</h1>
+                    <p class="text-gray-400">There are many variations of passages of Lorem Ipsum available.</p>
+                    <h3 class="font-bold mt-3">Learn More</h3>
+
+                </div>
+                <!-- card two  -->
+                <div class="p-5 border rounded-lg border-neutral-400">
+                    <img class="w-full" src="images/news-2.png" alt="">
+                    <p class=" text-gray-400 mt-3">Feb 05, 2027</p>
+                    <h1 class="font-bold text-lg">Collecting 8 points for discount</h1>
+                    <p class="text-gray-400">There are many variations of passages of Lorem Ipsum available.</p>
+                    <h3 class="font-bold mt-3">Learn More</h3>
+
+                </div>
+                <!-- card three  -->
+                <div class="p-5 border rounded-lg border-neutral-400">
+                    <img class="w-full" src="images/news-3.png" alt="">
+                    <p class=" text-gray-400 mt-3">Feb 05, 2027</p>
+                    <h1 class="font-bold text-lg">Collecting 8 points for discount</h1>
+                    <p class="text-gray-400">There are many variations of passages of Lorem Ipsum available.</p>
+                    <h3 class="font-bold mt-3">Learn More</h3>
+
+                </div>
             </div>
         </section>
     </main>
